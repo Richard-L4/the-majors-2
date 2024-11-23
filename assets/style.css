@@ -1,0 +1,105 @@
+/* Set background image on the body */
+body {
+    background-image: url('../assets/images/th (27).jpg'); /* Your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;  /* Ensure the body takes full viewport height */
+    display: flex;
+    flex-direction: column;  /* Make the body a flex container */
+}
+/* Navbar - make it transparent and on top of the background image */
+.navbar {
+    position: fixed;  /* Keeps the navbar fixed at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000;  /* Ensure it's on top */
+    background-color: transparent !important;  /* Force transparency */
+    color: white;  /* Optional: to make sure text is visible */
+    padding: 10px 0;  /* Adjust padding as needed */
+      /* Optional: remove shadow */
+}
+
+/* Navbar links and text (ensure they are visible on top of the background) */
+.navbar .navbar-nav .nav-link {
+    color: white !important;  /* Set text color for navbar links */
+}
+/* Navbar logo styles */
+.navbar-logo {
+    height: 80px; /* Adjust height for desired size */
+    width: auto; /* Keeps the logo's aspect ratio */
+    display: block; /* Ensures it doesn't cause layout shifts */
+    margin: 0 auto; /* Centers logo if needed */
+}
+
+.hero-header {
+    text-align: center; /* Center the text horizontally */
+    margin: 20px auto; /* Add some vertical spacing */
+    color: white; /* Set the text color to white */
+    font-size: 2rem; /* Adjust font size as needed */
+    font-weight: bold; /* Make the header bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add subtle shadow for contrast */
+}
+
+
+/* Carousel Wrapper - position it between the navbar and hero section */
+#carouselWrapper {
+    position: absolute;
+    top: 80px;  /* Adjust this to give space between the navbar and carousel */
+    width: 100%;
+    height: 350px;  /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;  /* Keeps carousel below navbar but above background */
+}
+
+#carouselExample {
+    width: 80%;  /* Adjust width as needed */
+    height: 250px;  /* Adjust carousel height */
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+#carouselExample .carousel-inner {
+    height: 100%;  /* Ensure the inner container stretches to fill the specified height */
+}
+
+#carouselExample .carousel-item {
+    height: 100%;  /* Make each carousel item take the full height of the parent */
+}
+
+#carouselExample .carousel-item img {
+    object-fit: cover;  /* Ensures images cover the area without distorting */
+    height: 100%;
+    width: 100%;
+}
+
+/* Hero Section - position it on top of the background image and below carousel */
+.hero {
+    position: absolute;
+    top: 440px;  /* Adjust based on the height of the carousel */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 3;  /* Ensures it's above the background image but below the navbar and carousel */
+}
+
+.hero-content {
+    padding: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+    border-radius: 8px;
+
+}
+
+/* Ensures the main content stretches to fill the full page */
+main {
+    flex: 1;  /* Ensures the main content area fills the rest of the screen */
+}
