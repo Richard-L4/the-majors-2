@@ -1,4 +1,9 @@
-/* Set background image on the body */
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}/* Set background image on the body */
 body {
     background-image: url('../assets/images/th (27).jpg'); /* Your background image */
     background-size: cover;
@@ -117,7 +122,7 @@ main {
 
 footer {
     background-color: transparent; /* Optional: Adjust as needed */
-    padding: 20px 0;
+    padding: 5px 0;
     margin-top: auto; /* Keeps footer at the bottom */
 }
 
