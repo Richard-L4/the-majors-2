@@ -109,6 +109,11 @@ main {
     flex: 1;  /* Ensures the main content area fills the rest of the screen */
 }
 html, body {
+    height: 100%; /* Ensures the full height is utilized */
+    margin: 0; /* Removes any default margin */
+} 
+
+body {
     margin: 0;
     padding: 0;
     height: 100%;
