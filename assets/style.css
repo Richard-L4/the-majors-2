@@ -4,6 +4,12 @@
     margin: 0;
     box-sizing: border-box;
 }/* Set background image on the body */
+
+html, body {
+    height: 100vh; /* Ensure html and body stretch to fit the full page content */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
 body {
     background-image: url('../assets/images/th (27).jpg'); /* Your background image */
     background-size: cover;
@@ -11,7 +17,7 @@ body {
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
-    height: 100vh;  /* Ensure the body takes full viewport height */
+    height: 100vh;
     display: flex;
     flex-direction: column;  /* Make the body a flex container */
 }
@@ -104,26 +110,45 @@ body {
 
 }
 
-/* Ensures the main content stretches to fill the full page */
-main {
-    flex: 1;  /* Ensures the main content area fills the rest of the screen */
+/* Ensure the players section is placed properly */
+#players {
+    position: relative; /* Ensures it stays in the normal document flow */
+    margin-top: 470px; /* Adjust this to create space below the carousel and hero */
+    margin-bottom: 10px; /* Add spacing below if necessary */
+    padding: 20px; /* Padding inside the section */
+    z-index: 10; /* Ensure it's above the background, but below the hero section */
 }
-html, body {
-    height: 100%; /* Ensures the full height is utilized */
-    margin: 0; /* Removes any default margin */
-} 
 
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+/* Card styling */
+#players .card {
+    margin-bottom: 20px; /* Space between rows of cards */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
-main {
-    flex-grow: 1;
+/* Ensure images inside cards are consistent */
+#players .card img {
+    width: 100%; /* Makes image responsive */
+    height: 150px; /* Ensures consistent image height */
+    object-fit: cover; /* Ensures images don't stretch */
+    border-bottom: 1px solid #ccc; /* Adds separator line */
 }
+
+
+
+
+
+
+/* Make sure carousel is above cards */
+#carouselWrapper {
+    z-index: 5; /* Keeps carousel above cards */
+}
+
+
 
 footer {
     background-color: transparent; /* Optional: Adjust as needed */
