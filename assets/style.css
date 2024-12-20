@@ -64,7 +64,7 @@ body {
 
 /* Scaling class */
 .scale {
-    transform: scale(1.1);
+    transform: scale(1.0);
     /* Scale up slightly */
     transition: transform 0.3s ease;
     /* Smooth scaling */
