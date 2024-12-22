@@ -69,21 +69,6 @@ body {
     transition: transform 0.3s ease;
     /* Smooth scaling */
 }
-
-
-
-.navbar a:hover {
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-/* Navbar links and text (ensure they are visible on top of the background) */
-.navbar .navbar-nav .nav-link {
-    color: white !important;
-    /* Set text color for navbar links */
-}
-
 .navbar-logo {
     height: 80px;
     /* Adjust height for desired size */
@@ -93,7 +78,35 @@ body {
     /* Ensures it doesn't cause layout shifts */
     margin: 0 auto;
     /* Centers logo if needed */
+    
 }
+
+
+.navbar a:hover {
+    color: black;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+/* Navbar links and text (ensure they are visible on top of the background) */
+.navbar .navbar-nav .nav-link {
+    color: white !important;
+    /* Set text color for navbar links */
+}
+
+.btn-outline-dark {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    transform: scale(1.0);
+}
+
+.btn-outline-dark:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
 
 .hero-header {
     text-align: center;
