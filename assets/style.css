@@ -113,14 +113,12 @@ body {
     /* Center the text horizontally */
     margin: 72px auto;
     /* Add some vertical spacing */
-    color: white;
+    color: rgb(9, 112, 43);
     /* Set the text color to white */
-    font-size: 2rem;
-    /* Adjust font size as needed */
-    font-weight: bold;
-    /* Make the header bold */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    /* Add subtle shadow for contrast */
+    font-size: 2rem; /* Sets the font size */
+    font-weight: bold; /* Makes the text bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a text shadow */
+
 }
 
 
@@ -214,6 +212,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    background-color: aquamarine;
 }
 
 /* Ensure images inside cards are consistent */
