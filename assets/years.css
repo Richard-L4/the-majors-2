@@ -163,3 +163,40 @@ footer {
     /* Instagram orange */
 }
 
+
+/* Adjustments for small screens */
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+    .navbar-logo {
+        width: 60px;
+        height: 60px;
+        z-index: 1;
+    }
+
+    .navbar {
+        position: fixed;
+        /* Keep navbar fixed at the top */
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        /* Ensure navbar is above all elements */
+        background-color: rgba(0, 0, 0, 0.8);
+        /* Optional: Semi-transparent background */
+    }
+
+    .navbar-title {
+        position: relative;
+        /* Keep the title in the flow */
+        z-index: 10;
+        /* Ensure the title stays above the logo */
+        font-size: 2rem;
+        /* Adjust font size for small screens */
+        color: white;
+        /* Ensure visibility */
+    }
+
+    .navbar-nav {
+        margin-top: 80px;
+        /* Allow dropdown menu items to appear below the navbar */
+    }
+}
