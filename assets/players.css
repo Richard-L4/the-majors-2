@@ -9,7 +9,7 @@
 
 html,
 body {
-    height: 100%;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     background-image: url('../assets/images/h_ov17aANGC23-2mm0405Hc.avif');
@@ -31,11 +31,16 @@ body {
     justify-content: space-evenly;
     font-family: 'Courier New', Courier, monospace;
 }
-
+/*
 main {
     flex: 1;
 }
 
+.main-content {
+    background-size: cover;
+    background-position: center;
+  }
+  */
 /* Navbar - make it transparent and on top of the background image */
 .navbar {
     position: fixed;
@@ -114,7 +119,10 @@ main {
     font-weight: bold;
 }
 
-
+.master {
+    color: rgb(9, 112, 43);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a text shadow */
+}
 
 /* Footer styling */
 footer {
@@ -199,4 +207,6 @@ footer {
         margin-top: 80px;
         /* Allow dropdown menu items to appear below the navbar */
     }
+
+   
 }
