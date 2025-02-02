@@ -123,6 +123,15 @@ main {
     color: rgb(9, 112, 43);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a text shadow */
 }
+.main-content {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Horizontally centers the cards */
+    align-items: center;     /* Vertically centers the cards (optional) */
+    flex-wrap: wrap;         /* Ensures the cards wrap on smaller screens */
+    gap: 20px; /* Adds space between the cards */
+    padding: 20px;
+}
 
 /* Footer styling */
 footer {
@@ -207,6 +216,9 @@ footer {
         margin-top: 80px;
         /* Allow dropdown menu items to appear below the navbar */
     }
-
+    .main-content {
+        justify-content: center; /* Keeps cards centered on smaller screens */
+        align-items: center;     /* Centers vertically */
+    }
    
 }
