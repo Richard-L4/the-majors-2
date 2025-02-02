@@ -9,9 +9,6 @@
 
 html,
 body {
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
     background-image: url('../assets/images/h_ov17aANGC23-2mm0405Hc.avif');
     background-size: cover; /* Ensures the image covers the entire viewport */
     background-position: center; /* Centers the image */
@@ -31,16 +28,7 @@ body {
     justify-content: space-evenly;
     font-family: 'Courier New', Courier, monospace;
 }
-/*
-main {
-    flex: 1;
-}
 
-.main-content {
-    background-size: cover;
-    background-position: center;
-  }
-  */
 /* Navbar - make it transparent and on top of the background image */
 .navbar {
     position: fixed;
@@ -119,18 +107,56 @@ main {
     font-weight: bold;
 }
 
-.master {
+
+.hero-header {
+    text-align: center;
+    /* Center the text horizontally */
+    margin: 72px auto;
+    /* Add some vertical spacing */
     color: rgb(9, 112, 43);
+    /* Set the text color to white */
+    font-size: 2rem; /* Sets the font size */
+    font-weight: bold; /* Makes the text bold */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a text shadow */
+
 }
-.main-content {
+/* Ensure the players section is placed properly */
+#golfers {
     position: relative;
-    display: flex;
-    justify-content: center; /* Horizontally centers the cards */
-    align-items: center;     /* Vertically centers the cards (optional) */
-    flex-wrap: wrap;         /* Ensures the cards wrap on smaller screens */
-    gap: 20px; /* Adds space between the cards */
+    /* Ensures it stays in the normal document flow */
+    margin-top: 118px;
+    /* Adjust this to create space below the carousel and hero */
+    margin-bottom: 10px;
+    /* Add spacing below if necessary */
     padding: 20px;
+    /* Padding inside the section */
+    z-index: 10;
+    /* Ensure it's above the background, but below the hero section */
+}
+
+/* Card styling */
+#golfers .card {
+    margin-bottom: 20px;
+    /* Space between rows of cards */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+/* Ensure images inside cards are consistent */
+#players .card img {
+    width: 100%;
+    /* Makes image responsive */
+    height: 150px;
+    /* Ensures consistent image height */
+    object-fit: cover;
+    /* Ensures images don't stretch */
+    border-bottom: 1px solid #ccc;
+    /* Adds separator line */
 }
 
 /* Footer styling */
@@ -141,10 +167,8 @@ footer {
     /* Add some spacing */
     text-align: center;
     height: 50px;
-    width: 100%;
+    position: relative;
 }
-
-
 #social-networks {
     text-align: center;
     display: flex;
@@ -180,6 +204,27 @@ footer {
     /* Instagram orange */
 }
 
+/* Default logo styles */
+.navbar-logo {
+    height: 80px;
+    /* Adjust size as needed */
+    width: auto;
+    display: block;
+}
+
+/* Title styles */
+.navbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    /* Ensure it's positioned relative to other elements */
+    z-index: 10;
+    /* Ensure title is above the logo */
+    color: #333;
+    /* Adjust text color */
+}
 
 /* Adjustments for small screens */
 /* Adjustments for small screens */
@@ -216,9 +261,4 @@ footer {
         margin-top: 80px;
         /* Allow dropdown menu items to appear below the navbar */
     }
-    .main-content {
-        justify-content: center; /* Keeps cards centered on smaller screens */
-        align-items: center;     /* Centers vertically */
-    }
-   
 }

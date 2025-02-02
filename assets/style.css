@@ -192,7 +192,7 @@ body {
 #players {
     position: relative;
     /* Ensures it stays in the normal document flow */
-    margin-top: 470px;
+    margin-top: 448px;
     /* Adjust this to create space below the carousel and hero */
     margin-bottom: 10px;
     /* Add spacing below if necessary */
