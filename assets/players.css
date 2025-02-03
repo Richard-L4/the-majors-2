@@ -121,7 +121,7 @@ body {
 
 }
 /* Ensure the players section is placed properly */
-#golfers {
+ #golfer1 {
     position: relative;
     /* Ensures it stays in the normal document flow */
     margin-top: 118px;
@@ -135,7 +135,7 @@ body {
 }
 
 /* Card styling */
-#golfers .card {
+#golfer1 .card {
     margin-bottom: 20px;
     /* Space between rows of cards */
     border: 1px solid #ccc;
@@ -144,11 +144,11 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: aquamarine;
+    background-color: rgb(12, 59, 44);
 }
 
 /* Ensure images inside cards are consistent */
-#players .card img {
+.card img {
     width: 100%;
     /* Makes image responsive */
     height: 150px;
@@ -158,7 +158,30 @@ body {
     border-bottom: 1px solid #ccc;
     /* Adds separator line */
 }
+#golfer2 {
+    position: relative;
+    /* Ensures it stays in the normal document flow */
+    margin-top: 118px;
+    /* Adjust this to create space below the carousel and hero */
+    margin-bottom: 10px;
+    /* Add spacing below if necessary */
+    padding: 20px;
+    /* Padding inside the section */
+    z-index: 10;
+    /* Ensure it's above the background, but below the hero section */
+}
 
+#golfer2 .card {
+    margin-bottom: 20px;
+    /* Space between rows of cards */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgb(43, 71, 62);
+}
 /* Footer styling */
 footer {
     background: white;
