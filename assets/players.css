@@ -1,6 +1,6 @@
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
-    padding: 0;
+    padding-bottom: 16px;
     margin: 0;
     box-sizing: border-box;
 }
@@ -120,11 +120,12 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a text shadow */
 
 }
+
 /* Ensure the players section is placed properly */
- #golfer1 {
-    position: relative;
+ #players {
+    position: relative !important;
     /* Ensures it stays in the normal document flow */
-    margin-top: 118px;
+    margin-top: 117px;
     /* Adjust this to create space below the carousel and hero */
     margin-bottom: 10px;
     /* Add spacing below if necessary */
@@ -135,7 +136,7 @@ body {
 }
 
 /* Card styling */
-#golfer1 .card {
+#players .card {
     margin-bottom: 20px;
     /* Space between rows of cards */
     border: 1px solid #ccc;
@@ -144,11 +145,11 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: rgb(12, 59, 44);
+    background-color: rgb(173, 203, 222);
 }
 
 /* Ensure images inside cards are consistent */
-.card img {
+#players .card img {
     width: 100%;
     /* Makes image responsive */
     height: 150px;
@@ -157,30 +158,6 @@ body {
     /* Ensures images don't stretch */
     border-bottom: 1px solid #ccc;
     /* Adds separator line */
-}
-#golfer2 {
-    position: relative;
-    /* Ensures it stays in the normal document flow */
-    margin-top: 118px;
-    /* Adjust this to create space below the carousel and hero */
-    margin-bottom: 10px;
-    /* Add spacing below if necessary */
-    padding: 20px;
-    /* Padding inside the section */
-    z-index: 10;
-    /* Ensure it's above the background, but below the hero section */
-}
-
-#golfer2 .card {
-    margin-bottom: 20px;
-    /* Space between rows of cards */
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background-color: rgb(43, 71, 62);
 }
 /* Footer styling */
 footer {
