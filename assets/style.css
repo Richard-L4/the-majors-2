@@ -83,7 +83,7 @@ body {
 
 
 .navbar a:hover {
-    color: black;
+    color: rgb(5, 104, 12);
     font-weight: bold;
     transform: scale(1.1);
 }
@@ -258,6 +258,7 @@ footer {
     list-style: none;
     margin: 0;
     padding: 0;
+    
 }
 
 #social-networks i {
