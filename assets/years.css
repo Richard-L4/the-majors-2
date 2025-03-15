@@ -114,7 +114,7 @@ main {
 .hero-header {
     text-align: center;
     /* Center the text horizontally */
-    margin: 72px auto;
+    margin: 118px auto;
     /* Add some vertical spacing */
     color: rgb(9, 112, 43);
     /* Set the text color to white */
@@ -255,5 +255,26 @@ footer {
     .navbar-nav {
         margin-top: 80px;
         /* Allow dropdown menu items to appear below the navbar */
+    }
+}
+
+/* For iPads and larger screens (e.g., 768px and above) */
+@media only screen and (min-width: 768px) {
+    .circle-container {
+        flex-direction: row; /* Display side by side */
+    }
+}
+
+/* For smaller screens (e.g., phones) */
+@media only screen and (max-width: 767px) {
+    .circle-container {
+        flex-direction: column; /* Stack circles vertically */
+        align-items: center; /* Center the circles */
+        gap: 5vw; 
+        margin-top: 5vh;
+    }
+    .circle {
+        width: 40vw; /* Adjust size for smaller screens */
+        height: 40vw;
     }
 }
