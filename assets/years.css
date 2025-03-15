@@ -133,8 +133,8 @@ main {
 }
 
 .circle {
-    width: 300px; /* Adjust size as needed */
-    height: 300px; /* Adjust size as needed */
+    width: 30vw; /* Adjust size as needed */
+    height: 30vw; /* Adjust size as needed */
     background-color: rgba(88, 198, 172, 0.2); /* Transparent with a hint of #2d9e84 */
     border-radius: 50%; /* Make it a circle */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Optional: adds shadow for depth */
