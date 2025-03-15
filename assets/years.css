@@ -138,9 +138,21 @@ main {
     background-color: rgba(88, 198, 172, 0.2); /* Transparent with a hint of #2d9e84 */
     border-radius: 50%; /* Make it a circle */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Optional: adds shadow for depth */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Ensure text is centered */
+    padding: 10px; /* Adds space around the text */
+    box-sizing: border-box;
 }
 
-
+.ab, .af {
+    color: azure;
+    font-size: 1.5vw; /* Adjust font size dynamically with viewport width */
+    word-wrap: break-word; /* Ensure the text wraps if it's too long */
+    overflow-wrap: break-word; /* Same as word-wrap for modern browsers */
+    text-align: center;
+}
 
 /* Footer styling */
 footer {
