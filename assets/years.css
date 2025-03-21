@@ -124,26 +124,58 @@ main {
 
 }
 
+/* Hero Section - position it on top of the background image and below carousel */
+.hero {
+    position: absolute;
+    top: 3000px;
+    /* Adjust based on the height of the carousel */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 3;
+    /* Ensures it's above the background image but below the navbar and carousel */
+}
+
+.hero-content {
+    padding: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Semi-transparent black background */
+    border-radius: 8px;
+
+}
+
 .circle-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 350px; /* Space between the circles */
+    gap: 170px; /* Space between the circles */
     height: 100vh; /* Full viewport height to center vertically */
 }
 
 .circle {
-    width: 30vw; /* Adjust size as needed */
-    height: 30vw; /* Adjust size as needed */
+    width: 35vw; /* Adjust size as needed */
+    height: 35vw; /* Adjust size as needed */
     background-color: rgba(88, 198, 172, 0.2); /* Transparent with a hint of #2d9e84 */
     border-radius: 50%; /* Make it a circle */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Optional: adds shadow for depth */
-    display: flex; /* Enable flexbox */
+    display: flex; 
+    flex-direction: column;/* Enable flexbox */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     text-align: center; /* Ensure text is centered */
     padding: 10px; /* Adds space around the text */
     box-sizing: border-box;
+    background-image: radial-gradient(circle at 10% 10%, rgba(0, 0, 0, 0.1) 5%, transparent 20%),
+    radial-gradient(circle at 30% 30%, rgba(0, 0, 0, 0.1) 5%, transparent 20%),
+    radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.1) 5%, transparent 20%),
+    radial-gradient(circle at 70% 70%, rgba(0, 0, 0, 0.1) 5%, transparent 20%),
+    radial-gradient(circle at 90% 90%, rgba(0, 0, 0, 0.1) 5%, transparent 20%);
+    background-size: 15% 15%; /* Adjusts size of dimples */
 }
 
 .ab, .af {
@@ -154,6 +186,14 @@ main {
     text-align: center;
 }
 
+/* Style the embedded video */
+.video-frame {
+    width: 35%; /* Adjust width relative to circle */
+    height: auto;
+    aspect-ratio: 15 / 9; /* Keeps the video proportions */
+    border: none;
+    margin-top: 10px; /* Space below text */
+}
 /* Footer styling */
 footer {
     background: white;
@@ -263,6 +303,18 @@ footer {
     .circle-container {
         flex-direction: row; /* Display side by side */
     }
+    .hero {
+        position: absolute;
+        top: 220px;
+        /* Adjust based on the height of the carousel */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        color: white;
+        z-index: 3;
+        /* Ensures it's above the background image but below the navbar and carousel */
+    }
 }
 
 /* For smaller screens (e.g., phones) */
@@ -270,11 +322,38 @@ footer {
     .circle-container {
         flex-direction: column; /* Stack circles vertically */
         align-items: center; /* Center the circles */
-        gap: 5vw; 
+        gap: 15vw; 
         margin-top: 5vh;
     }
     .circle {
         width: 40vw; /* Adjust size for smaller screens */
         height: 40vw;
+    }
+    .hero {
+        position: absolute;
+        top: 300px;
+        /* Adjust based on the height of the carousel */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        color: white;
+        z-index: 3;
+        /* Ensures it's above the background image but below the navbar and carousel */
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .hero {
+        position: absolute;
+        top: 220px;
+        /* Adjust based on the height of the carousel */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        color: white;
+        z-index: 3;
+        /* Ensures it's above the background image but below the navbar and carousel */
     }
 }
