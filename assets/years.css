@@ -1,6 +1,6 @@
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
-    padding-bottom: 16px;
+    padding-bottom: 0px;
     margin: 0;
     box-sizing: border-box;
 }
