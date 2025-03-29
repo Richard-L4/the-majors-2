@@ -59,7 +59,7 @@ main {
     /* Add some padding around the text for better appearance */
     border-radius: 5px;
     /* Optional: Round the corners for a polished look */
-    margin: -8px 10px;
+    margin: -13px 10px;
     /* Add horizontal spacing between links */
     transition: background-color 0.3s ease;
     /* Smooth transition for hover effect */
@@ -124,24 +124,77 @@ main {
 
 }
 
-.form-container {
-    width: 80%; /* Adjust width as needed */
-    max-width: 100vw; /* Prevents it from stretching too much */
-    margin: 50px auto; /* Centers it horizontally */
+/* Make the section take up full viewport width */
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center; /* Centers the form horizontally */
+    align-items: center; /* Centers content if needed */
+    padding: 20px 0; /* Adds some spacing above and below */
+}
+
+/* Contact Form Styling */
+.contact-form {
+    width: 80%; /* 80% of the .container width */
+    max-width: 100vw; /* Ensures it doesn't get too large */
+    background-color: white;
     padding: 20px;
-    background-color: white; /* White background */
-    border-radius: 8px; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.btn-primary {
+/* Input fields */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Submit button */
+.contact-form button {
     width: 100%;
     padding: 10px;
     font-size: 18px;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
+
+.contact-form button:hover {
+    transform: scale(1.05);
+}
+
+/* Map Container */
+.map-container {
+    width: 90%; /* Matches form width */
+    max-width: 80vw;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Change the border color to Bootstrap's blue when the input or textarea is focused */
+.form-control:focus,
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff; /* Bootstrap primary blue */
+    box-shadow: 0 0 0 0.25rem rgba(38, 143, 255, 0.25); /* Optional: Adds a blue glow effect */
+    outline: none; /* Removes the default focus outline */
+}
+
+
 
 
 /* Footer styling */
@@ -189,61 +242,52 @@ footer {
     /* Instagram orange */
 }
 
-/* Default logo styles */
-.navbar-logo {
-    height: 80px;
-    /* Adjust size as needed */
-    width: auto;
-    display: block;
-}
-
-/* Title styles */
-.navbar-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 0 auto;
-    position: relative;
-    /* Ensure it's positioned relative to other elements */
-    z-index: 10;
-    /* Ensure title is above the logo */
-    color: #333;
-    /* Adjust text color */
-}
-
-/* Adjustments for small screens */
 /* Adjustments for small screens */
 @media (max-width: 768px) {
+    /* Adjust logo size and prevent it from sticking to the edges */
     .navbar-logo {
         width: 60px;
         height: 60px;
         z-index: 1;
+        margin-left: 10px; /* Add some space from the left edge */
     }
 
+    /* Adjust navbar to be fixed at the top and prevent sticking to edges */
     .navbar {
         position: fixed;
-        /* Keep navbar fixed at the top */
         top: 0;
+        left: -14px;
+        right: 0;
         width: 100%;
         z-index: 1000;
-        /* Ensure navbar is above all elements */
-        background-color: rgba(0, 0, 0, 0.8);
-        /* Optional: Semi-transparent background */
+        background-color: rgba(0, 0, 0, 0.8); /* Optional: Semi-transparent background */
+        padding: 10px 15px; /* Adjust padding to prevent content from touching the edges */
     }
 
+    /* Adjust navbar title size and positioning */
     .navbar-title {
         position: relative;
-        /* Keep the title in the flow */
         z-index: 10;
-        /* Ensure the title stays above the logo */
         font-size: 2rem;
-        /* Adjust font size for small screens */
         color: white;
-        /* Ensure visibility */
+        margin-left: 70px; /* Ensure title is away from the logo */
     }
 
+    /* Adjust navbar items (links) for small screens */
     .navbar-nav {
         margin-top: 80px;
-        /* Allow dropdown menu items to appear below the navbar */
+        text-align: center; /* Center align the navigation items */
+    }
+
+    /* Make navbar items less spaced on small screens */
+    .navbar-nav li {
+        margin: 5px 0; /* Reduce space between navbar items */
     }
 }
+
+
+
+
+
+
+
