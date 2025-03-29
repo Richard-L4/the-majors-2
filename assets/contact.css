@@ -33,6 +33,7 @@ main {
 }
 
 /* Navbar - make it transparent and on top of the background image */
+
 .navbar {
     position: fixed;
     /* Keeps the navbar fixed at the top */
@@ -60,6 +61,8 @@ main {
     border-radius: 5px;
     /* Optional: Round the corners for a polished look */
     margin: -13px 10px;
+    margin-left: 17px;
+    margin-right: -6px;
     /* Add horizontal spacing between links */
     transition: background-color 0.3s ease;
     /* Smooth transition for hover effect */
@@ -130,7 +133,9 @@ main {
     display: flex;
     justify-content: center; /* Centers the form horizontally */
     align-items: center; /* Centers content if needed */
-    padding: 20px 0; /* Adds some spacing above and below */
+    padding: 20px 0;
+    padding-left: 3px;
+    padding-right: 0px; /* Adds some spacing above and below */
 }
 
 /* Contact Form Styling */
@@ -282,6 +287,7 @@ footer {
     /* Make navbar items less spaced on small screens */
     .navbar-nav li {
         margin: 5px 0; /* Reduce space between navbar items */
+        
     }
 }
 
