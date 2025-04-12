@@ -157,7 +157,7 @@ body {
 }
 
 #carouselExample .carousel-item img {
-    object-fit: cover;
+    object-fit: contain;
     /* Ensures images cover the area without distorting */
     height: 100%;
     width: 100%;
@@ -219,9 +219,9 @@ body {
 #players .card img {
     width: 100%;
     /* Makes image responsive */
-    height: 150px;
+    height: auto;
     /* Ensures consistent image height */
-    object-fit: cover;
+    object-fit: contain;
     /* Ensures images don't stretch */
     border-bottom: 1px solid #ccc;
     /* Adds separator line */
