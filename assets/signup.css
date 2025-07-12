@@ -13,6 +13,7 @@ body {
     background-size: cover; /* Ensures the image covers the entire viewport */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat;
+    background-attachment: fixed;
     /* Ensure html and body stretch to fit the full page content */
     margin: 0;
     /* Remove default margin */

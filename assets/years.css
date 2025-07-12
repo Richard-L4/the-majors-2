@@ -13,7 +13,9 @@ body {
     background-size: cover; /* Ensures the image covers the entire viewport */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat;
+    background-attachment: fixed; /* This makes the background static */
     /* Ensure html and body stretch to fit the full page content */
+    z-index: -1; /* behind the content */
     margin: 0;
     /* Remove default margin */
     padding: 0;

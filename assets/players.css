@@ -9,10 +9,11 @@
 
 html,
 body {
-    background-image: url('../assets/images/the-course.avif');
+    background-image: url('../assets/images/amen-corne-the-masters.jpg');
     background-size: cover; /* Ensures the image covers the entire viewport */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat;
+    background-attachment: fixed;
     /* Ensure html and body stretch to fit the full page content */
     margin: 0;
     /* Remove default margin */
@@ -113,7 +114,7 @@ body {
     /* Center the text horizontally */
     margin: 72px auto;
     /* Add some vertical spacing */
-    color: rgb(9, 112, 43);
+    color: white;
     /* Set the text color to white */
     font-size: 2rem; /* Sets the font size */
     font-weight: bold; /* Makes the text bold */
@@ -179,7 +180,7 @@ footer {
     padding: 10px 0;
     /* Add some spacing */
     text-align: center;
-    height: 50px;
+    height: 60px;
     position: relative;
 }
 #social-networks {
