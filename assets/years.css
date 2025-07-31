@@ -118,7 +118,7 @@ main {
     /* Center the text horizontally */
     margin: 118px auto;
     /* Add some vertical spacing */
-    color: rgb(9, 112, 43);
+    color: white;
     /* Set the text color to white */
     font-size: 2rem; /* Sets the font size */
     font-weight: bold; /* Makes the text bold */
