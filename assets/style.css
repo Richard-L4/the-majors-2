@@ -1,6 +1,6 @@
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     margin-bottom: 0;
     box-sizing: border-box;
 }
@@ -9,7 +9,7 @@
 
 html,
 body {
-    background-image: url('../assets/images/amen-corne-the-masters.jpg');
+    background-image: url('../assets/images/the-course.avif');
     background-size: cover; /* Ensures the image covers the entire viewport */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat;

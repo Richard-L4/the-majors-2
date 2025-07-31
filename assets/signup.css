@@ -1,6 +1,6 @@
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
-    padding-bottom: 16px;
+    padding-bottom: 8px;
     margin: 0;
     box-sizing: border-box;
 }
@@ -131,10 +131,10 @@ main {
     max-width: 100vw;
     margin: 50px auto;
     padding: 20px;
-    background-color: white;
+    background-color: #ebe8e8;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: left;
 }
 
 /* Style input fields */
@@ -143,7 +143,7 @@ main {
     padding: 10px;
     margin-top: 5px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
 }
 
 /* Submit button */
